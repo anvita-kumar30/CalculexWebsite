@@ -161,4 +161,43 @@
 
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const subjectInput = document.getElementById('subject');
+    const messageInput = document.getElementById('message');
+    const sentMessage = document.querySelector('.sent-message');
+  
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      // Display loading message (if needed)
+      // const loadingMessage = document.querySelector('.loading');
+      // loadingMessage.style.display = 'block';
+  
+      // Simulate sending data to server (in real-world scenario, this would be an AJAX request)
+      // For demonstration purposes, we'll clear the form and show a success message after a short delay
+      setTimeout(function () {
+        // Clear form inputs
+        nameInput.value = '';
+        emailInput.value = '';
+        subjectInput.value = '';
+        messageInput.value = '';
+  
+        // Hide loading message (if needed)
+        // loadingMessage.style.display = 'none';
+  
+        // Show success message
+        sentMessage.style.display = 'block';
+  
+        // Hide success message after 3 seconds (optional)
+        setTimeout(function () {
+          sentMessage.style.display = 'none';
+        }, 3000);
+      }, 1000); // Simulated delay
+    });
+  });
+  
+
 })();
