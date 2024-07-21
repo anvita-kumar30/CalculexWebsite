@@ -1,5 +1,9 @@
 # Calculex Website
 
+**Project Description**:- Calculex offers an intuitive and streamlined calculator tool designed for efficiency and ease of use. With its modern interface and responsive design, users can perform a wide range of calculations quickly and accurately. The tool is optimized for both beginners and advanced users, ensuring a smooth experience across all devices. 
+
+
+
 **Landing Page:**
 
 
